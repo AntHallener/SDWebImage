@@ -1,3 +1,24 @@
+## [5.9.4 - 5.9 Patch, on Oct 13th, 2020](https://github.com/rs/SDWebImage/releases/tag/5.9.4)
+See [all tickets marked for the 5.9.4 release](https://github.com/SDWebImage/SDWebImage/milestone/80)
+
+### Fixes
+- Fix race condition when using transitions that are canceled and then switched to a new transition or load operation #3108 #3107
+- Fixed the store cache type was specified to `SDImageCacheTypeDisk ` that no pictures were obtained when the disk had pictures #3110
+
+## [5.9.3 - 5.9 Patch, on Oct 13th, 2020](https://github.com/rs/SDWebImage/releases/tag/5.9.3)
+See [all tickets marked for the 5.9.3 release](https://github.com/SDWebImage/SDWebImage/milestone/79)
+
+### Fixes
+- Fix coder priority inverse in SDAnimatedImage #3101
+- Fix that SDImageCache will automatically store the disk image into memory cache even if store cache type is disk #3104
+
+## [5.9.2 - 5.9 Patch, on Sep 29th, 2020](https://github.com/rs/SDWebImage/releases/tag/5.9.2)
+See [all tickets marked for the 5.9.2 release](https://github.com/SDWebImage/SDWebImage/milestone/78)
+
+### Fixes
+- Fix the issue that SDAnimatedImageView will trigger an empty callback when animation stopped. This will cause some bad effect such as rendering a empty image or placeholder image (especially on iOS 14) #3092
+- Fix: `duration` is not used in SDWebImageTransition convenience initializers. #3094
+
 ## [5.9.1 - 5.9 Patch, on Sep 11th, 2020](https://github.com/rs/SDWebImage/releases/tag/5.9.1)
 See [all tickets marked for the 5.9.1 release](https://github.com/SDWebImage/SDWebImage/milestone/77)
 
